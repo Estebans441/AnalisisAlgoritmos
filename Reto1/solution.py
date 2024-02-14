@@ -17,7 +17,13 @@ def problem_2(limit):
   return sum
 
 def problem_3(limit):
-  return -1
+  i = 2
+  while i * i <= limit:
+    if limit % i != 0:
+      i += 1
+    else:
+      limit = limit // i
+  return limit
 
 def problem_4():
   num1 = 999
